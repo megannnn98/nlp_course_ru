@@ -5,6 +5,11 @@
 - Video (Russian): [lecture & seminar](https://disk.yandex.ru/i/mygl3L-gzgbUfA)
 - From other courses (English): Stanford CS224N - [intro](https://www.youtube.com/watch?v=OQQ-W_63UgQ), [embeddings](https://www.youtube.com/watch?v=rmVRLeJRkl4), [text classification](https://www.youtube.com/watch?v=nzSPZyjGlWI)
 
+### Russian translations / Переводы на русский
+
+- [**Seminar — Russian / Семинар на русском**](./seminar.ru.ipynb)
+- [**Homework — Russian / Домашнее задание на русском**](./homework.ru.ipynb)
+
 ### Practice
 The practice for this week takes place in notebooks. Just open them and follow instructions from there.
 - Seminar: [`./seminar.ipynb`](./seminar.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2025/week01_embeddings/seminar.ipynb)

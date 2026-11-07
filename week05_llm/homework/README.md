@@ -1,3 +1,5 @@
+> Russian version / Русская версия: [README.ru.md](./README.ru.md) и [homework.ru.ipynb](./homework.ru.ipynb).
+
 # Week 05: Qwen3.5 homework
 
 Open `homework.ipynb` for the assignment and implement the TODOs in `qwen.py`.

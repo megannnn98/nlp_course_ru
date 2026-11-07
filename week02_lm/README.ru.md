@@ -6,6 +6,9 @@
 - Материалы других курсов (английский): Stanford NLP — [N-граммные языковые модели](https://archive.org/details/41IntroductionToNGramsStanfordNLPProfessorDanJurafskyChrisManning/), [нейросетевые языковые модели](https://www.youtube.com/watch?v=Keqep_PKrY8).
 
 ### Практика
+
+**Семинар:** [N-граммные модели](./seminar.ru.ipynb) · **Домашняя работа:** [нейросетевые языковые модели](./homework_pytorch.ru.ipynb)
+
 - Семинар: [`seminar.ipynb`](./seminar.ipynb) · [Colab](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week02_lm/seminar.ipynb).
 - Домашнее задание: [`homework_pytorch.ipynb`](./homework_pytorch.ipynb).
 

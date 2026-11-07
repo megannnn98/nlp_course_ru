@@ -5,6 +5,9 @@
 - **Видео на русском:** [лекция и практика](https://disk.yandex.ru/i/_7cKg_NyNBqnsg).
 
 ### Практика
+
+**Семинар:** [сборка трансформера](./seminar.ru.ipynb) · **Домашняя работа:** [Qwen3.5](./homework/homework.ru.ipynb) · [инструкции](./homework/README.ru.md)
+
 - Семинар: [`seminar.ipynb`](./seminar.ipynb) · [Colab](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week05_llm/seminar.ipynb).
 - Домашнее задание: инструкции в [`homework/README.md`](./homework/README.md).
 

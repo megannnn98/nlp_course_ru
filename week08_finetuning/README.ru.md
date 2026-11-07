@@ -7,6 +7,9 @@
 - По желанию: [лекция о чат-ботах, ориентированных на выполнение задач (русский)](https://disk.yandex.ru/i/4e_vqRDqwVGiFA), [лекция о диалоговых системах (английский)](https://disk.yandex.ru/i/XR1-8CghVOIK7A).
 
 ### Практика
+
+**Семинар:** [PEFT и LoRA](./seminar.ru.ipynb) · **Домашняя работа:** [RLHF, PPO](./homework.ru.ipynb)
+
 Два задания по 5 баллов каждое; можно получить дополнительные баллы.
 - Семинар: [`seminar.ipynb`](./seminar.ipynb) · [Colab](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week08_finetuning/seminar.ipynb).
 - Домашнее задание: [`homework.ipynb`](./homework.ipynb). В конце есть необязательное сложное задание по дообучению с подкреплением (RL).

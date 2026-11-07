@@ -5,5 +5,8 @@
 - Дополнительные материалы будут опубликованы позднее (пометка авторов оригинала).
 
 ### Практика
+
+**Семинар:** [BERT и NER](./seminar.ru.ipynb) · **Домашняя работа:** [поиск дубликатов вопросов](./homework.ru.ipynb)
+
 - Семинар: [`seminar.ipynb`](./seminar.ipynb) · [Colab](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week04_transfer/seminar.ipynb).
 - Домашнее задание: [`homework.ipynb`](./homework.ipynb) · [Colab](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week04_transfer/homework.ipynb).

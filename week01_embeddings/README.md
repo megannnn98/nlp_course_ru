@@ -7,13 +7,15 @@
 
 ### Russian translations / Переводы на русский
 
-- [**Seminar — Russian / Семинар на русском**](./seminar.ru.ipynb)
-- [**Homework — Russian / Домашнее задание на русском**](./homework.ru.ipynb)
+- [**Seminar — Russian / Семинар на русском (default)**](./seminar.ipynb) · [English original](./seminar.en.ipynb)
+- [**Homework — Russian / Домашнее задание на русском (default)**](./homework.ipynb) · [English original](./homework.en.ipynb)
+
+The default notebooks are in Russian in this fork. Separate `*.ru.ipynb` copies remain available.
 
 ### Practice
 The practice for this week takes place in notebooks. Just open them and follow instructions from there.
-- Seminar: [`./seminar.ipynb`](./seminar.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2025/week01_embeddings/seminar.ipynb)
-- Homework: [`./homework.ipynb`](./homework.ipynb)
+- Seminar (Russian): [`./seminar.ipynb`](./seminar.ipynb)
+- Homework (Russian): [`./homework.ipynb`](./homework.ipynb)
 - **Enrolled students:** Submit both `seminar.ipynb` and `homework.ipynb` to the LMS system for full points!
 
 

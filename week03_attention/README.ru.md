@@ -6,6 +6,9 @@
 - Материалы других курсов (английский): Stanford — [Seq2seq и машинный перевод](https://www.youtube.com/watch?v=IxQtK2SjWWM); CMU — [Seq2seq](https://www.youtube.com/watch?v=aHkgjfKvIhk&list=PL8PYTP1V4I8Ba7-rY4FoB4-jfuJ7VDKEE&index=20), [Attention](https://www.youtube.com/watch?v=ullLRKZ99qQ&index=21&list=PL8PYTP1V4I8Ba7-rY4FoB4-jfuJ7VDKEE).
 
 ### Практика
+
+**Семинар + домашняя работа:** [Seq2seq и Attention](./practice_and_homework.ru.ipynb)
+
 На этой неделе семинар и домашнее задание объединены в один ноутбук.
 - [`practice_and_homework.ipynb`](./practice_and_homework.ipynb) · [Colab](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week03_attention/practice_and_homework.ipynb).
 

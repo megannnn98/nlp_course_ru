@@ -8,6 +8,19 @@
 - Сообщения об ошибках, предложения по улучшению и исправления принимаются через [Issues](https://github.com/yandexdataschool/nlp_course/issues).
 - Установка библиотек и решение типичных проблем обсуждаются в [этой теме](https://github.com/yandexdataschool/nlp_course/issues/1).
 
+## Практические задания на русском
+
+Русские версии всех **16 учебных ноутбуков**, доступных в ветке `2026` на момент перевода. Исполняемый код и автоматические проверки сохранены; переведены текстовые ячейки и основные маркеры заданий. Оригиналы находятся рядом без суффикса `.ru`.
+
+- **Неделя 1. Word Embeddings**: [seminar.ru.ipynb](./week01_embeddings/seminar.ru.ipynb) · [homework.ru.ipynb](./week01_embeddings/homework.ru.ipynb)
+- **Неделя 2. Языковые модели**: [seminar.ru.ipynb](./week02_lm/seminar.ru.ipynb) · [homework_pytorch.ru.ipynb](./week02_lm/homework_pytorch.ru.ipynb)
+- **Неделя 3. Attention**: [practice_and_homework.ru.ipynb](./week03_attention/practice_and_homework.ru.ipynb)
+- **Неделя 4. Transfer Learning**: [seminar.ru.ipynb](./week04_transfer/seminar.ru.ipynb) · [homework.ru.ipynb](./week04_transfer/homework.ru.ipynb)
+- **Неделя 5. LLM**: [seminar.ru.ipynb](./week05_llm/seminar.ru.ipynb) · [homework.ru.ipynb](./week05_llm/homework/homework.ru.ipynb)
+- **Неделя 6. In-context Learning**: [seminar_ICL.ru.ipynb](./week06_icl/seminar_ICL.ru.ipynb) · [homework_ICL.ru.ipynb](./week06_icl/homework_ICL.ru.ipynb)
+- **Неделя 7. Эффективность и квантование**: [hw_quantization.ru.ipynb](./week07_efficiency/hw_quantization.ru.ipynb)
+- **Неделя 8. Fine-tuning**: [seminar.ru.ipynb](./week08_finetuning/seminar.ru.ipynb) · [homework.ru.ipynb](./week08_finetuning/homework.ru.ipynb)
+
 ## Программа
 
 ### [Неделя 1. Векторные представления слов](./week01_embeddings/README.ru.md)

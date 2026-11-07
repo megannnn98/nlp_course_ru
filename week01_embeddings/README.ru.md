@@ -5,13 +5,6 @@
 - **Видео на русском:** [лекция и семинар](https://disk.yandex.ru/i/mygl3L-gzgbUfA).
 - Материалы других курсов (английский): Stanford CS224N — [введение](https://www.youtube.com/watch?v=OQQ-W_63UgQ), [эмбеддинги](https://www.youtube.com/watch?v=rmVRLeJRkl4), [классификация текстов](https://www.youtube.com/watch?v=nzSPZyjGlWI).
 
-### Переведённые задания на русском
-
-- [**Семинар: Word Embeddings — на русском**](./seminar.ru.ipynb) · [Оригинал на английском](./seminar.ipynb)
-- [**Домашнее задание: переводчик на эмбеддингах — на русском**](./homework.ru.ipynb) · [Оригинал на английском](./homework.ipynb)
-
-В русских ноутбуках переведены Markdown-инструкции, условия задач, поясняющие комментарии и подсказки. Имена переменных, исполняемый код, проверки и примеры данных оставлены прежними.
-
 ### Практика
 Задания этой недели выполняются в Jupyter Notebook. Откройте соответствующий файл и следуйте инструкциям внутри.
 - Семинар: [`seminar.ipynb`](./seminar.ipynb) · [Открыть в Colab](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week01_embeddings/seminar.ipynb).

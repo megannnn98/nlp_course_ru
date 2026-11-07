@@ -7,15 +7,17 @@
 
 ### Переведённые задания на русском
 
-- [**Семинар: Word Embeddings — на русском**](./seminar.ru.ipynb) · [Оригинал на английском](./seminar.ipynb)
-- [**Домашнее задание: переводчик на эмбеддингах — на русском**](./homework.ru.ipynb) · [Оригинал на английском](./homework.ipynb)
+- [**Семинар: Word Embeddings — на русском**](./seminar.ipynb) · [Английский оригинал](./seminar.en.ipynb)
+- [**Домашнее задание: переводчик на эмбеддингах — на русском**](./homework.ipynb) · [Английский оригинал](./homework.en.ipynb)
+
+> **VS Code:** после `git pull origin 2026` открывай обычные `seminar.ipynb` и `homework.ipynb` — теперь они на русском. Файлы `*.ru.ipynb` сохранены как дополнительные ссылки на тот же перевод.
 
 В русских ноутбуках переведены Markdown-инструкции, условия задач, поясняющие комментарии и подсказки. Имена переменных, исполняемый код, проверки и примеры данных оставлены прежними.
 
 ### Практика
 Задания этой недели выполняются в Jupyter Notebook. Откройте соответствующий файл и следуйте инструкциям внутри.
-- Семинар: [`seminar.ipynb`](./seminar.ipynb) · [Открыть в Colab](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week01_embeddings/seminar.ipynb).
-- Домашнее задание: [`homework.ipynb`](./homework.ipynb).
+- Семинар на русском: [`seminar.ipynb`](./seminar.ipynb).
+- Домашнее задание на русском: [`homework.ipynb`](./homework.ipynb).
 - **Для зачисленных студентов:** отправьте оба файла, `seminar.ipynb` и `homework.ipynb`, в LMS, чтобы получить все баллы.
 
 ### Интерактивные объяснения, исследовательские упражнения, статьи

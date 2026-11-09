@@ -1,42 +1,32 @@
-> Russian version / Русская версия: [README.ru.md](./README.ru.md) и [homework.ru.ipynb](./homework.ru.ipynb).
+# Неделя 5. Домашнее задание Qwen3.5
 
-# Week 05: Qwen3.5 homework
+**[Открыть задание на русском](./homework.ipynb)** · [Оригинал на английском](./homework.ipynb).
 
-Open `homework.ipynb` for the assignment and implement the TODOs in `qwen.py`.
-`qwen_configs.py` supplies the model configuration. The notebook contains the
-explanations and demonstrations; run the public tests separately.
+Открой ноутбук и реализуй помеченные `TODO` функции в `qwen.py`. Файл `qwen_configs.py` содержит конфигурацию модели; в ноутбуке находятся пояснения и примеры. Публичные тесты запускаются отдельно.
 
-Required tasks cover RMSNorm, gated normalization, partial RoPE, vectorized
-regular multi-head attention (equal query/key/value head counts), SwiGLU,
-Gated DeltaNet, the decoder/backbone, causal LM loss, and config conversion.
-GQA, chunked recurrence, and MTP are three independent optional bonuses.
-The `week07_efficiency` lecture will explain GQA and many more efficiency
-techniques.
+Обязательная часть включает RMSNorm, gated-нормировку, partial RoPE, векторизованный multi-head attention (равное количество query/key/value-голов), SwiGLU, Gated DeltaNet, декодер и основу модели, loss причинной языковой модели и преобразование конфигураций. **GQA, блочная рекуррентность и MTP** — независимые бонусы. В лекции `week07_efficiency` объясняются GQA и другие методы оптимизации.
 
-## Public tests
+## Публичные тесты
 
-Run these commands in a terminal from this directory:
+Запускай из этой директории:
 
 ```sh
-# Required tasks; CPU, no checkpoint download:
+# Обязательные задания: CPU, без скачивания чекпоинта
 python -m pytest tests/test_qwen_public.py -q
 
-# Optional bonuses:
+# Необязательные бонусы
 python -m pytest tests/test_qwen_bonus.py -q
 
-# Required tasks and bonuses together:
+# Все обязательные задания и бонусы
 python -m pytest --run-bonus -q
 ```
 
-A default run excludes bonuses. Unfinished TODOs fail until implemented.
-Real-weight tests are opt-in and download approximately 1.8 GB.
-The actual checkpoint uses GQA: its logits and generation checks require the
-GQA bonus, enabled below with `--run-bonus`. Omit that flag to run only the
-required-task config metadata checks:
+По умолчанию бонусы исключены. Незавершённые `TODO` приводят к ошибкам соответствующих тестов.
+
+Тесты с реальными весами включаются отдельно и скачивают примерно **1,8 ГБ**. Настоящий чекпоинт использует GQA, поэтому проверка логитов и генерации требует бонус GQA (флаг `--run-bonus`). Без флага проверяются только обязательные метаданные конфигурации:
 
 ```sh
 python -m pytest tests/test_qwen_real_weights.py --run-real-weights --run-bonus -q
 ```
 
-Add `--gpu` on a CUDA machine to move test inputs and modules to CUDA.
-Ordinary small-model tests run on CPU without downloading a checkpoint.
+На компьютере с CUDA можно добавить `--gpu`, чтобы переместить тестовые тензоры и модули на GPU. Обычные тесты маленькой модели работают на CPU без скачивания чекпоинта.

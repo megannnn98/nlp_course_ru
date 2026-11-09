@@ -1,73 +1,93 @@
-> **Русская версия:** [Программа и материалы на русском](./README.ru.md). Переводы README восьми недель находятся в соответствующих каталогах. Перевод ноутбуков и слайдов ещё не завершён.
+# ШАД — курс по обработке естественного языка (NLP)
 
-# YSDA Natural Language Processing course
-* This is the 2025 iteration of the course, materials are added as we prepare them.
-* Lecture and seminar materials for each week are in ./week* folders, see README.md for materials and instructions
-* Any technical issues, ideas, bugs in course materials, contribution ideas - add an [issue](https://github.com/yandexdataschool/nlp_course/issues)
-* Installing libraries and troubleshooting: [this thread](https://github.com/yandexdataschool/nlp_course/issues/1).
+**Оригинал:** [yandexdataschool/nlp_course](https://github.com/yandexdataschool/nlp_course), ветка [`2026`](https://github.com/yandexdataschool/nlp_course/tree/2026).
 
+В оригинальном README сказано, что это версия курса 2025 года, материалы которой добавляются по мере подготовки. При этом ветка по умолчанию на момент подготовки русской версии называется `2026`.
 
-# Syllabus
-- [__week01__](./week01_embeddings) __Word Embeddings__
-  - Lecture: Word embeddings. Distributional semantics. Count-based (pre-neural) methods. Word2Vec: learn vectors. GloVe: count, then learn. Evaluation: intrinsic vs extrinsic. Analysis and Interpretability. [Interactive lecture materials and more.](https://lena-voita.github.io/nlp_course.html#preview_word_emb)
-  - Seminar: Playing with word and sentence embeddings
-  - Homework: Embedding-based machine translation system
+- Материалы лекций и семинаров распределены по каталогам `week*`. Инструкции и ссылки находятся в README соответствующей недели.
+- Сообщения об ошибках, предложения по улучшению и исправления принимаются через [Issues](https://github.com/yandexdataschool/nlp_course/issues).
+- Установка библиотек и решение типичных проблем обсуждаются в [этой теме](https://github.com/yandexdataschool/nlp_course/issues/1).
 
-- [__week02__](./week02_lm) __Language Modeling__
-  - Lecture: Language Modeling: what does it mean? Left-to-right framework. N-gram language models. Neural Language Models: General View, Recurrent Models, Convolutional Models. Evaluation. Practical Tips: Weight Tying. Analysis and Interpretability. [Interactive lecture materials and more.](https://lena-voita.github.io/nlp_course.html#preview_lang_models)
-  - Seminar: Build a N-gram language model from scratch
-  - Homework: Neural LMs & smoothing in count-based models.
+## Практические задания на русском
 
-- [__week03__](./week03_attention) __Seq2seq and Attention__
-  - Lecture: Seq2seq Basics: Encoder-Decoder framework, Training, Simple Models, Inference (e.g., beam search). Attention: general, score functions, models. Transformer: self-attention, masked self-attention, multi-head attention; model architecture. Subword Segmentation (BPE). Analysis and Interpretability: functions of attention heads; probing for linguistic structure. [Interactive lecture materials and more.](https://lena-voita.github.io/nlp_course.html#preview_seq2seq_attn)
-  - Seminar: Basic sequence to sequence model
-  - Homework: Machine translation with attention
+Русские версии всех **16 учебных ноутбуков**, доступных в ветке `2026` на момент перевода. Исполняемый код и автоматические проверки сохранены; переведены текстовые ячейки и основные маркеры заданий. Английские оригиналы остались только в [исходном репозитории](https://github.com/yandexdataschool/nlp_course/tree/2026).
 
-- [__week04__](./week04_transfer) __Transfer Learning__
-  - Lecture: What is Transfer Learning? Great idea 1: From Words to Words-in-Context (CoVe, ELMo). Great idea 2: From Replacing Embeddings to Replacing Models (GPT, BERT). (A Bit of) Adaptors. Analysis and Interpretability. [Interactive lecture materials and more.](https://lena-voita.github.io/nlp_course.html#preview_transfer)
-  - Homework: fine-tuning a pre-trained BERT model
+- **Неделя 1. Word Embeddings**: [seminar.ipynb](./week01_embeddings/seminar.ipynb) · [homework.ipynb](./week01_embeddings/homework.ipynb)
+- **Неделя 2. Языковые модели**: [seminar.ipynb](./week02_lm/seminar.ipynb) · [homework_pytorch.ipynb](./week02_lm/homework_pytorch.ipynb)
+- **Неделя 3. Attention**: [practice_and_homework.ipynb](./week03_attention/practice_and_homework.ipynb)
+- **Неделя 4. Transfer Learning**: [seminar.ipynb](./week04_transfer/seminar.ipynb) · [homework.ipynb](./week04_transfer/homework.ipynb)
+- **Неделя 5. LLM**: [seminar.ipynb](./week05_llm/seminar.ipynb) · [homework.ipynb](./week05_llm/homework/homework.ipynb)
+- **Неделя 6. In-context Learning**: [seminar_ICL.ipynb](./week06_icl/seminar_ICL.ipynb) · [homework_ICL.ipynb](./week06_icl/homework_ICL.ipynb)
+- **Неделя 7. Эффективность и квантование**: [hw_quantization.ipynb](./week07_efficiency/hw_quantization.ipynb)
+- **Неделя 8. Fine-tuning**: [seminar.ipynb](./week08_finetuning/seminar.ipynb) · [homework.ipynb](./week08_finetuning/homework.ipynb)
 
-- [__week05__](./week05_llm) __Large Language Models__
-  - Lecture: Scaling laws. Emergent abilities. Open-source LLMs.
-  - Practice: hands-on with open-source LLMs
+## Программа
 
-- [__week06__](./week06_prompting) __Prompting & In-Context Learning__
-  - Lecture: Prompting techniques. Chain-of-Thought reasoning. In-context learning: how and why it works. Analysis and Interpretability.
-  - Homework: manual prompt engineering and chain-of-thought reasoning
+### [Неделя 1. Векторные представления слов](./week01_embeddings/README.md)
+**Лекция:** дистрибутивная семантика; методы на основе частот совместной встречаемости слов (до нейросетевых подходов); Word2Vec — обучение векторов; GloVe — подсчёт статистик и последующее обучение; оценка качества векторов — внутренняя и по прикладным задачам; анализ и интерпретация результатов. [Интерактивные материалы](https://lena-voita.github.io/nlp_course.html#preview_word_emb).
 
-- [__week07__](./week07_efficiency) __Efficiency__
-  - Lecture: Model Acceleration & Inference Optimization Techniques.
-  - Seminar + Homework
+**Семинар:** эксперименты с векторными представлениями слов и предложений.
 
-- [__week08__](./week08_finetuning) __Fine-tuning (PEFT & RLHF)__
-  - Lecture: Parameter-efficient fine-tuning. LoRA. Adapters. Reinforcement Learning from Human Feedback (RLHF).
-  - Seminar + Homework
+**Домашнее задание:** система машинного перевода на основе эмбеддингов.
 
-- [__week09__](./week09_retrieval) __Retrieval-Augmented Generation (RAG)__
-  - Lecture: Dense retrieval. RAG architectures.
-  - Practice
+### [Неделя 2. Языковые модели](./week02_lm/README.md)
+**Лекция:** что такое языковая модель; авторегрессионное моделирование слева направо; N-граммные языковые модели; нейросетевые языковые модели, рекуррентные и свёрточные архитектуры; метрики оценки; практический приём связывания весов (weight tying); анализ и интерпретация. [Интерактивные материалы](https://lena-voita.github.io/nlp_course.html#preview_lang_models).
 
-- [__week10__](./week10_agents) __AI Agents__
-  - Lecture: Agent architectures. Tool use. Memory.
-  - Seminar + Homework
+**Семинар:** реализация N-граммной языковой модели с нуля.
 
-- [__week11__](./week11_interpretability) __Interpretability__
-  - Lecture: Probing. Mechanistic interpretability.
-  - Seminar + Homework
+**Домашнее задание:** нейросетевые языковые модели и сглаживание частотных моделей.
 
-- [__week12__](./week12_multimodal) __Multimodal LLMs__
+### [Неделя 3. Seq2seq и механизм внимания](./week03_attention/README.md)
+**Лекция:** архитектура энкодер–декодер, обучение и генерация последовательностей, поиск с лучом (beam search); механизм внимания и функции оценки соответствия; Transformer, self-attention, маскированный self-attention и многоголовое внимание; сегментация на подслова (BPE); анализ голов внимания и выявление языковой структуры. [Интерактивные материалы](https://lena-voita.github.io/nlp_course.html#preview_seq2seq_attn).
 
-- [__week13__](./week13_llm_systems) __Building LLM Systems__
+**Семинар:** базовая модель sequence-to-sequence.
 
-- [__week14__](./week14_agents_production) __AI Agents in Production__
+**Домашнее задание:** машинный перевод с механизмом внимания.
 
-# Contributors & course staff
-Course materials and teaching performed by
-- [Elena Voita](https://lena-voita.github.io) - original course author
-- [Michael Diskin](https://diskin.me) - responsible for the 2025 edition; lecturer
-- [Just Heuristic](https://github.com/justheuristic) - most of the seminars and some lectures
-- [Ignat Romanov](https://github.com/RomanovIgnat), [George Yakushev](https://github.com/Mr-DarkTesla), [Andrei Panferov](https://github.com/BlackSamorez) - lectures
-- [Natasha Badanina](https://github.com/dokapoka) - course admin for on-campus students
-- [Boris Kovarsky](https://github.com/kovarsky), [David Talbot](https://github.com/drt7), [Sergey Gubanov](https://github.com/esgv), Ruslan Svirschevski - help build course materials and/or held some classes
-- [30+ volunteers](https://github.com/yandexdataschool/nlp_course/graphs/contributors) who contributed and refined the notebooks and course materials. Without their help, the course would not be what it is today
-- [A mighty host of TAs](https://lk.yandexdataschool.ru/courses/2023-autumn/7.1171-avtomaticheskaia-obrabotka-tekstov/) who stoically grade hundreds of homework submissions from on-campus students each year
+### [Неделя 4. Перенос обучения](./week04_transfer/README.md)
+**Лекция:** что такое transfer learning; переход от векторов слов к контекстным представлениям (CoVe, ELMo); переход от замены эмбеддингов к предобученным моделям (GPT, BERT); адаптеры; анализ и интерпретация. [Интерактивные материалы](https://lena-voita.github.io/nlp_course.html#preview_transfer).
+
+**Домашнее задание:** дообучение предобученной модели BERT.
+
+### [Неделя 5. Большие языковые модели (LLM)](./week05_llm/README.md)
+**Лекция:** законы масштабирования, возникающие способности моделей (emergent abilities), открытые LLM.
+
+**Практика:** работа с открытыми большими языковыми моделями.
+
+### [Неделя 6. Промптинг и обучение в контексте](./week06_icl/README.md)
+**Лекция:** техники составления промптов, рассуждение с промежуточными шагами (Chain-of-Thought), in-context learning — как и почему этот подход работает; анализ и интерпретация.
+
+**Домашнее задание:** ручная разработка промптов и рассуждение с промежуточными шагами.
+
+### [Неделя 7. Эффективность и ускорение](./week07_efficiency/README.md)
+**Лекция:** ускорение моделей и оптимизация инференса.
+
+**Семинар и домашнее задание:** квантование моделей.
+
+### [Неделя 8. Дообучение: PEFT и RLHF](./week08_finetuning/README.md)
+**Лекция:** параметроэффективное дообучение, LoRA, адаптеры, обучение с подкреплением по обратной связи от людей (RLHF).
+
+**Семинар и домашнее задание:** практическое дообучение.
+
+### Темы, заявленные в программе, но пока без соответствующих каталогов в ветке `2026`
+- **Неделя 9.** Генерация с дополненным поиском (RAG): плотный векторный поиск и архитектуры RAG.
+- **Неделя 10.** AI-агенты: архитектуры агентов, инструменты и память.
+- **Неделя 11.** Интерпретируемость моделей: probing и механистическая интерпретируемость.
+- **Неделя 12.** Мультимодальные языковые модели.
+- **Неделя 13.** Разработка систем на базе LLM.
+- **Неделя 14.** AI-агенты в промышленной эксплуатации.
+
+## Авторы и команда курса
+
+- [Елена Войта](https://lena-voita.github.io) — первоначальный автор курса.
+- [Михаил Дискин](https://diskin.me) — отвечает за версию 2025 года, преподаватель.
+- [Just Heuristic](https://github.com/justheuristic) — большинство семинаров, часть лекций.
+- [Игнат Романов](https://github.com/RomanovIgnat), [Георгий Якушев](https://github.com/Mr-DarkTesla), [Андрей Панферов](https://github.com/BlackSamorez) — лекции.
+- [Наташа Баданина](https://github.com/dokapoka) — административная поддержка очных студентов.
+- [Борис Коварский](https://github.com/kovarsky), [Дэвид Талбот](https://github.com/drt7), [Сергей Губанов](https://github.com/esgv), Руслан Свирщевский — материалы и преподавание.
+- [Более 30 участников](https://github.com/yandexdataschool/nlp_course/graphs/contributors) помогали улучшать ноутбуки и другие материалы.
+- Ассистенты курса проверяли многочисленные домашние задания студентов.
+
+## О переводе
+
+Это неофициальный перевод. Он не изменяет содержание исходного курса и не является изданием Яндекса. Файлы `README.md` переведены вручную. Для перевода Markdown-текста в ноутбуках и дополнительных материалах см. [`ПЕРЕВОД.md`](./ПЕРЕВОД.md) и [`translate.py`](./translate.py). Оригинальные исходники и уведомление об авторских правах следует сохранять.

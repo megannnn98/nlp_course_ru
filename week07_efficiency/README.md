@@ -1,10 +1,12 @@
-## Week 07: Model Acceleration & Inference Optimization Techniques
+## Неделя 7. Ускорение моделей и оптимизация инференса
 
-### Materials
-- Lecture slides: [`./07_model_inference.pdf`](./07_model_inference.pdf)
+### Материалы
+- [Слайды лекции](./07_model_inference.pdf).
+- Дополнительные материалы появятся позднее (пометка авторов оригинала).
 
-More to be added
+### Практика
 
-### Practice
-- Seminar: [`./hw_quantization.ipynb`](./hw_quantization.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week07_efficiency/hw_quantization.ipynb)
-- Homework: [`./hw_quantization.ipynb`](./hw_quantization.ipynb)
+**Практика и домашняя работа:** [квантование, GPTQ, QUIK](./hw_quantization.ipynb)
+
+- Семинар: [`hw_quantization.ipynb`](./hw_quantization.ipynb) · [Colab](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week07_efficiency/hw_quantization.ipynb).
+- Домашнее задание: [`hw_quantization.ipynb`](./hw_quantization.ipynb).

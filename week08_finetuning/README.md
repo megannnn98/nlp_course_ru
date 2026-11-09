@@ -1,30 +1,30 @@
-## Week 08: Fine-tuning (PEFT & RLHF)
+## Неделя 8. Дообучение (PEFT и RLHF)
 
-### Materials
-- Lecture slides: [`./lecture.pdf`](./lecture.pdf)
-- Video (Russian): [lecture](https://disk.yandex.ru/i/Axjf2u-hWDLAMw), [seminar](https://disk.yandex.ru/i/I_rAisZlK22FLA)
-- From other courses (English): [EMNLP tutorial on PEFT](https://www.youtube.com/watch?v=KoOlcX3XLd4) (3.5h) | [MunichNLP short version](https://www.youtube.com/watch?v=StdrAJZsmw4) | [Hugging Face RLHF tutorial](https://www.youtube.com/watch?v=2MBJOuVq380)
-- Optional: [lecture on task-driven chatbots](https://disk.yandex.ru/i/4e_vqRDqwVGiFA) (Russian) | [lecture on conversation systems](https://disk.yandex.ru/i/XR1-8CghVOIK7A) (English)
+### Материалы
+- [Слайды лекции](./lecture.pdf).
+- **Видео на русском:** [лекция](https://disk.yandex.ru/i/Axjf2u-hWDLAMw), [семинар](https://disk.yandex.ru/i/I_rAisZlK22FLA).
+- Материалы других курсов (английский): [семинар EMNLP по PEFT (3,5 ч)](https://www.youtube.com/watch?v=KoOlcX3XLd4), [короткая версия MunichNLP](https://www.youtube.com/watch?v=StdrAJZsmw4), [урок Hugging Face по RLHF](https://www.youtube.com/watch?v=2MBJOuVq380).
+- По желанию: [лекция о чат-ботах, ориентированных на выполнение задач (русский)](https://disk.yandex.ru/i/4e_vqRDqwVGiFA), [лекция о диалоговых системах (английский)](https://disk.yandex.ru/i/XR1-8CghVOIK7A).
 
-### Practice
-2 assignments, worth 5 points each (with bonus point opportunities)
-- Seminar: [`./seminar.ipynb`](./seminar.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week08_finetuning/seminar.ipynb)
-- Homework: [`./homework.ipynb`](./homework.ipynb) - includes optional hardcore RL fine-tuning assignment at the end
+### Практика
 
-### Extra materials (RL finetuning & alignment)
-- https://github.com/CarperAI/trlx - an alternative to trl designed for larger models
-- A more detailed explanation of the reinforcement learning algorithms used in RLHF: [part 1](https://github.com/yandexdataschool/Practical_RL/tree/240c989fb1cca52effc289c4033438fa67af1e20/week06_policy_based) and [part 2](https://github.com/yandexdataschool/Practical_RL/tree/240c989fb1cca52effc289c4033438fa67af1e20/week09_policy_II)
-- Anthropic's take on aligning LLMs - [Constitutional AI](https://arxiv.org/abs/2212.08073)
-- Earlier works on reinforcement learning for natural language generation:
-  - [task-oriented conversation system](https://arxiv.org/abs/1703.07055)
-  - [generating dialogues](https://arxiv.org/abs/1606.01541)
-  - [sequential adversarial networks](https://arxiv.org/abs/1609.05473) (a.k.a. SeqGAN)
-  - A large overview for machine translation (touching on RL, including RL failures) - [arxiv](https://arxiv.org/abs/1609.08144)
-- as usual, there are dozens of links in the lecture slides (top of this readme)
+**Семинар:** [PEFT и LoRA](./seminar.ipynb) · **Домашняя работа:** [RLHF, PPO](./homework.ipynb)
 
-### Extra materials (model architecture)
-- "Building ML models like we build open-source software" by Colin Raffel - https://www.youtube.com/watch?v=0oGxT_i7nk8
-- Rotary position embeddings explanation from EleutherAI - https://blog.eleuther.ai/rotary-embeddings/
-- Group query attention to reduce the memory usage for inference - https://arxiv.org/abs/2305.13245v2
-- Gated activations improve transformer (apparently due to divine benevolence) - https://arxiv.org/abs/2002.05202
-- as usual, there are dozens of links in the lecture slides (top of this readme)
+Два задания по 5 баллов каждое; можно получить дополнительные баллы.
+- Семинар: [`seminar.ipynb`](./seminar.ipynb) · [Colab](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week08_finetuning/seminar.ipynb).
+- Домашнее задание: [`homework.ipynb`](./homework.ipynb). В конце есть необязательное сложное задание по дообучению с подкреплением (RL).
+
+### Дополнительные материалы: дообучение с подкреплением и alignment
+- [CarperAI/trlx](https://github.com/CarperAI/trlx) — альтернатива `trl` для более крупных моделей.
+- Подробный разбор алгоритмов RL, применяемых в RLHF: [часть 1](https://github.com/yandexdataschool/Practical_RL/tree/240c989fb1cca52effc289c4033438fa67af1e20/week06_policy_based) и [часть 2](https://github.com/yandexdataschool/Practical_RL/tree/240c989fb1cca52effc289c4033438fa67af1e20/week09_policy_II).
+- [Constitutional AI от Anthropic](https://arxiv.org/abs/2212.08073).
+- Ранние исследования RL для генерации естественного языка: [диалоговая система для решения задач](https://arxiv.org/abs/1703.07055), [генерация диалогов](https://arxiv.org/abs/1606.01541), [SeqGAN](https://arxiv.org/abs/1609.05473).
+- [Обзор методов машинного перевода с обсуждением RL и его неудач](https://arxiv.org/abs/1609.08144).
+- Дополнительные ссылки есть непосредственно в слайдах лекции.
+
+### Дополнительные материалы: архитектура моделей
+- [Colin Raffel: Building ML models like we build open-source software](https://www.youtube.com/watch?v=0oGxT_i7nk8).
+- [Разбор Rotary Position Embeddings от EleutherAI](https://blog.eleuther.ai/rotary-embeddings/).
+- [Grouped-Query Attention для сокращения потребления памяти при инференсе](https://arxiv.org/abs/2305.13245v2).
+- [Gated-активации для улучшения трансформеров](https://arxiv.org/abs/2002.05202).
+- Другие ссылки приведены в слайдах лекции.

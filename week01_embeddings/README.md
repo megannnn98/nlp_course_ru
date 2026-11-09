@@ -1,45 +1,43 @@
-## Week 01: Word Embeddings
+## Неделя 1. Векторные представления слов
 
-### Materials
-- Lecture slides: [Google Drive (embeddings)](https://drive.google.com/file/d/1y2GKIKBzie7l8iycBO6gTKGiTTfJc4Dr/view) | [Google Drive (classification)](https://drive.google.com/file/d/1f7vQGNRe1PQi6WnEdCZbtf_zmx6fF8g1/view)
-- Video (Russian): [lecture & seminar](https://disk.yandex.ru/i/mygl3L-gzgbUfA)
-- From other courses (English): Stanford CS224N - [intro](https://www.youtube.com/watch?v=OQQ-W_63UgQ), [embeddings](https://www.youtube.com/watch?v=rmVRLeJRkl4), [text classification](https://www.youtube.com/watch?v=nzSPZyjGlWI)
+### Материалы
+- Слайды лекций: [эмбеддинги (Google Drive)](https://drive.google.com/file/d/1y2GKIKBzie7l8iycBO6gTKGiTTfJc4Dr/view) | [классификация (Google Drive)](https://drive.google.com/file/d/1f7vQGNRe1PQi6WnEdCZbtf_zmx6fF8g1/view).
+- **Видео на русском:** [лекция и семинар](https://disk.yandex.ru/i/mygl3L-gzgbUfA).
+- Материалы других курсов (английский): Stanford CS224N — [введение](https://www.youtube.com/watch?v=OQQ-W_63UgQ), [эмбеддинги](https://www.youtube.com/watch?v=rmVRLeJRkl4), [классификация текстов](https://www.youtube.com/watch?v=nzSPZyjGlWI).
 
-### Russian translations / Переводы на русский
+### Переведённые задания на русском
 
-- [**Seminar — Russian / Семинар на русском (default)**](./seminar.ipynb) · [English original](./seminar.en.ipynb)
-- [**Homework — Russian / Домашнее задание на русском (default)**](./homework.ipynb) · [English original](./homework.en.ipynb)
+- [**Семинар: Word Embeddings — на русском**](./seminar.ipynb) · [Английский оригинал](https://github.com/yandexdataschool/nlp_course/blob/2026/week01_embeddings/seminar.ipynb)
+- [**Домашнее задание: переводчик на эмбеддингах — на русском**](./homework.ipynb) · [Английский оригинал](https://github.com/yandexdataschool/nlp_course/blob/2026/week01_embeddings/homework.ipynb)
 
-The default notebooks are in Russian in this fork. Separate `*.ru.ipynb` copies remain available.
+В русских ноутбуках переведены Markdown-инструкции, условия задач, поясняющие комментарии и подсказки. Имена переменных, исполняемый код, проверки и примеры данных оставлены прежними.
 
-### Practice
-The practice for this week takes place in notebooks. Just open them and follow instructions from there.
-- Seminar (Russian): [`./seminar.ipynb`](./seminar.ipynb)
-- Homework (Russian): [`./homework.ipynb`](./homework.ipynb)
-- **Enrolled students:** Submit both `seminar.ipynb` and `homework.ipynb` to the LMS system for full points!
+### Практика
+Задания этой недели выполняются в Jupyter Notebook. Откройте соответствующий файл и следуйте инструкциям внутри.
+- Семинар на русском: [`seminar.ipynb`](./seminar.ipynb).
+- Домашнее задание на русском: [`homework.ipynb`](./homework.ipynb).
+- **Для зачисленных студентов:** отправьте оба файла, `seminar.ipynb` и `homework.ipynb`, в LMS, чтобы получить все баллы.
 
+### Интерактивные объяснения, исследовательские упражнения, статьи
+- [NLP Course For You: векторные представления слов](https://lena-voita.github.io/nlp_course.html#preview_word_emb).
+- [NLP Course For You: классификация текстов](https://lena-voita.github.io/nlp_course.html#preview_text_clf).
 
-### Lecture-blog, research thinking exercises, related papers and fun: 
-#### ![logo](../resources/course_logo.png) [NLP Course For You](https://lena-voita.github.io/nlp_course.html#preview_word_emb) 
-![lecture_preview](../resources/nlp2020_gifs/word_embeddings.gif)
+![Анимация векторов слов](../resources/nlp2020_gifs/word_embeddings.gif)
 
-#### ![logo](../resources/course_logo.png) [NLP Course For You](https://lena-voita.github.io/nlp_course.html#preview_text_clf) 
-![lecture_preview](../resources/nlp2020_gifs/text_classification.gif)
+### Прогулка по семантическому пространству
+- [Интерактивное исследование семантического пространства](https://lena-voita.github.io/nlp_course/word_embeddings.html#analysis_interpretability).
 
-### Take a walk through space... Semantic Space!
-#### ![logo](../resources/course_logo.png) [NLP Course For You](https://lena-voita.github.io/nlp_course/word_embeddings.html#analysis_interpretability) 
-![embedding_space_walk](../resources/nlp2020_gifs/walk_through_space.gif)
+![Прогулка по пространству](../resources/nlp2020_gifs/walk_through_space.gif)
 
-### Dataset viewer:
-#### ![logo](../resources/course_logo.png) [NLP Course For You](https://lena-voita.github.io/nlp_course/text_classification.html#dataset_examples) 
-![dataset_viewer](../resources/nlp2020_gifs/classification_dataset_viewer.gif)
+### Просмотр примеров из набора данных
+- [Интерактивный просмотр датасета для классификации текста](https://lena-voita.github.io/nlp_course/text_classification.html#dataset_examples).
 
+![Примеры датасета](../resources/nlp2020_gifs/classification_dataset_viewer.gif)
 
-### Extra materials
-- On hierarchical & sampled softmax estimation for word2vec [page](http://ruder.io/word-embeddings-softmax/)
-- [Alternative explanation of Word2Vec negative sampling](https://arxiv.org/pdf/1402.3722.pdf)
-- GloVe project [page](https://nlp.stanford.edu/projects/glove/)
-- FastText project [repo](https://github.com/facebookresearch/fastText)
-
-- Colah's blog on convolutions, including text convolutions - [url](http://colah.github.io/posts/2014-07-Understanding-Convolutions/)
-- Same architectures applied for music - [blog post](http://benanne.github.io/2014/08/05/spotify-cnns.html)
+### Дополнительные материалы
+- [Иерархический softmax и sampled softmax для Word2Vec](http://ruder.io/word-embeddings-softmax/).
+- [Альтернативное объяснение negative sampling в Word2Vec](https://arxiv.org/pdf/1402.3722.pdf).
+- [Проект GloVe](https://nlp.stanford.edu/projects/glove/).
+- [Проект fastText](https://github.com/facebookresearch/fastText).
+- [Статья Colah о свёртках, в том числе текстовых](http://colah.github.io/posts/2014-07-Understanding-Convolutions/).
+- [Применение аналогичных архитектур к музыке](http://benanne.github.io/2014/08/05/spotify-cnns.html).

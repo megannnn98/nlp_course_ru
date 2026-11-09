@@ -1,22 +1,25 @@
-## Week 05: Large Language Models
+## Неделя 5. Большие языковые модели (LLM)
 
-### Materials
-- Lecture slides: [`./lecture_llm.pdf`](./lecture_llm.pdf) ([Google Slides](https://docs.google.com/presentation/d/1Gklql_r2DsArtx2GePqd0FX3bt75GMOj/edit?usp=sharing&ouid=114346045969351679204&rtpof=true&sd=true))
-- Video (Russian): [lecture & practice](https://disk.yandex.ru/i/_7cKg_NyNBqnsg)
+### Материалы
+- [Слайды лекции](./lecture_llm.pdf) ([Google Slides](https://docs.google.com/presentation/d/1Gklql_r2DsArtx2GePqd0FX3bt75GMOj/edit?usp=sharing&ouid=114346045969351679204&rtpof=true&sd=true)).
+- **Видео на русском:** [лекция и практика](https://disk.yandex.ru/i/_7cKg_NyNBqnsg).
 
-### Practice
-- Seminar: [`./seminar.ipynb`](./seminar.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week05_llm/seminar.ipynb)
-- Homework: see instructions in [`./homework/README.md`](./homework/README.md)
+### Практика
 
-### Open-source models mentioned in the lecture:
-- Qwen - https://huggingface.co/Qwen
-- LLaMA - https://huggingface.co/meta-llama/
-- Falcon - https://huggingface.co/tiiuae/falcon-180B
-- BLOOM - https://huggingface.co/bigscience/bloom
+**Семинар:** [сборка трансформера](./seminar.ipynb) · **Домашняя работа:** [Qwen3.5](./homework/homework.ipynb) · [инструкции](./homework/README.md)
 
-Some of those models require you to apply for access, and model authors may take time to process your application. While you are waiting for your license to be processed, you may wish to browse the huggingface hub for alternative (e.g. quantized) versions of the same model that are available immediately with no application. For example, here's a [LLaMA-2-70B](https://huggingface.co/TheBloke/Llama-2-70B-Chat-GPTQ) quantized to 4-bit and available using the same `transformers.AutoModelForCausalLM.from_pretrained` syntax. Please note that, while the hub allows you to download and use those model versions without officially applying for access to LLaMA-2, the original model's license may restrict this kind of usage.
+- Семинар: [`seminar.ipynb`](./seminar.ipynb) · [Colab](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week05_llm/seminar.ipynb).
+- Домашнее задание: инструкции в [`homework/README.md`](./homework/README.md).
 
-### Extra materials
-- Glitch tokens (lecture mentions SolidGoldMagikarp) - [blog post by Jessica Rumbelow, mwatkins](https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg/solidgoldmagikarp-plus-prompt-generation)
-- ["Sparks of AGI"](https://arxiv.org/abs/2303.12712) - a controversial but influential paper about worrying LLM abilities
-- [BigBench](https://github.com/google/BIG-bench) - a benchmark of emergent LLM abilities mentioned in the slides
+### Открытые модели, упомянутые в лекции
+- [Qwen](https://huggingface.co/Qwen).
+- [LLaMA](https://huggingface.co/meta-llama/).
+- [Falcon](https://huggingface.co/tiiuae/falcon-180B).
+- [BLOOM](https://huggingface.co/bigscience/bloom).
+
+Для доступа к некоторым моделям нужно подать заявку, рассмотрение которой занимает время. Пока заявка обрабатывается, можно поискать на Hugging Face альтернативные версии той же модели, например квантованные, доступные без заявки. В оригинальном курсе приведён пример [4-битной LLaMA-2-70B](https://huggingface.co/TheBloke/Llama-2-70B-Chat-GPTQ), которую можно загрузить через `transformers.AutoModelForCausalLM.from_pretrained`. **Ограничения лицензии исходной модели могут сохраняться**, даже если скачивание альтернативной версии не требует отдельной заявки.
+
+### Дополнительные материалы
+- [Glitch-токены, включая SolidGoldMagikarp](https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg/solidgoldmagikarp-plus-prompt-generation).
+- [Sparks of AGI — дискуссионная, но влиятельная статья о возможностях LLM](https://arxiv.org/abs/2303.12712).
+- [BIG-bench — бенчмарк для исследования возможностей LLM](https://github.com/google/BIG-bench).

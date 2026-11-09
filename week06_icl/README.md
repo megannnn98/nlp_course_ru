@@ -1,10 +1,12 @@
-## Week 06: In-context Learning
+## Неделя 6. Обучение в контексте (In-context Learning)
 
-### Materials
-- Lecture slides: [`./06_in_context_learning.pdf`](./06_in_context_learning.pdf)
+### Материалы
+- [Слайды лекции](./06_in_context_learning.pdf).
+- Дополнительные материалы появятся позднее (пометка авторов оригинала).
 
-More to be added
+### Практика
 
-### Practice
-- Seminar: [`./seminar_ICL.ipynb`](./seminar_ICL.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week06_icl/seminar_ICL.ipynb)
-- Homework: [`./homework_ICL.ipynb`](./homework_ICL.ipynb)
+**Семинар:** [промптинг](./seminar_ICL.ipynb) · **Домашняя работа:** [few-shot, Chain-of-Thought](./homework_ICL.ipynb)
+
+- Семинар: [`seminar_ICL.ipynb`](./seminar_ICL.ipynb) · [Colab](https://colab.research.google.com/github/yandexdataschool/nlp_course/blob/2026/week06_icl/seminar_ICL.ipynb).
+- Домашнее задание: [`homework_ICL.ipynb`](./homework_ICL.ipynb).
